@@ -1,6 +1,25 @@
 .App {
+  text-align: center;
+  cursor: none !important;
+}
+.customCursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 100;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+}
+.customCursor > img {
+  height: 100%;
+  object-fit: scale-down;
+}
+.boxes {
   width: 450px;
   display: flex;
   flex-wrap: wrap;
   background-color: white;
+  cursor: pointer;
 }
